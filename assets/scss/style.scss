@@ -688,7 +688,8 @@ footer {
         margin-top: 3.6vw !important;
         .li {
             width: 8vw !important;
-            height: 2vw !important;
+            height: 1.5vw !important;
+            margin: 2px !important;
         }
     }
     .info {
@@ -774,7 +775,7 @@ footer {
         }
     }
     input[type="checkbox"]:checked ~ label li:nth-child(1) {
-        top: 9px!important;
+        top:2vw !important;
     }
     .nav {
         width: 61.9vw !important;
