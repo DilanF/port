@@ -60,3 +60,21 @@ $('.nav a[href^="#"]').on('click', function (e) {
         scrollTop: targetOffset - 0
     }, 500);
 });
+
+$('input:checkbox').change(function () {
+    if ($(this).is(":checked")) {
+        $('.nav').addClass("show");
+    } else {
+        $('.nav').removeClass("show");
+    }
+});
+
+$(".anc").click(function () {
+    $(".nav").removeClass("show");
+    $('#chec').prop('checked', false);
+});
+
+$(".overlay").click(function () {
+    $(".nav").removeClass("show");
+    $('#chec').prop('checked', false);
+});

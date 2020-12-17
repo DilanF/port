@@ -277,14 +277,31 @@ nav {
     }
 }  
 
+.overlay {
+    width: 30000px;
+    position: absolute;
+    height: 30000px;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+    display: none;
+}
+ 
 .li-menu {
     background-color: #D1462F!important;
     transition: .5s!important;
 }  
 
-input[type="checkbox"]:checked ~ nav {
+.show {
     transform: translateX(-350px);
 }
+
+input[type="checkbox"]:checked ~ .overlay{
+    display: block!important;
+}
+
 input[type="checkbox"]:checked ~ label li {
     background-color: #D1462F;
     transition: .5s;
@@ -318,7 +335,7 @@ input[type="checkbox"]:checked ~ label li {
         h1 {
             color: #201D1B;
             font-size: 3.9vw;
-            font-family: sans-serif;
+            font-family: 'Oswald', sans-serif;
         }
     }
     .moldura {
@@ -672,9 +689,9 @@ footer {
             margin-left: 0!important;
             width: 77%;
             text-align: center;
-            margin-top: 27.4vw !important;
+            margin-top: 20.4vw !important;
             h1 {
-                font-size: 11.9vw;
+                font-size: 14.9vw;
             }
         }
     }
